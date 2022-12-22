@@ -1,2 +1,2 @@
-# Praktische Informativ mit Java
+# Praktische Informatik mit Java
 Pruefung praktische Informatik mit Java

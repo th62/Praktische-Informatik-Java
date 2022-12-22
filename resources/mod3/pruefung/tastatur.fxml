@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="tastaturPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="310.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="mod3.pruefung.TastaturController">
+    <children>
+        <GridPane fx:id="tastaturGrid" alignment="CENTER" prefHeight="312.0" prefWidth="200.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="230.0" minWidth="10.0" prefWidth="63.0"/>
+                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="143.0" minWidth="10.0" prefWidth="87.0"/>
+                <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="155.0" minWidth="10.0" prefWidth="62.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="50.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER"/>
+                <RowConstraints maxHeight="45.0" minHeight="22.0" prefHeight="22.0" valignment="CENTER" vgrow="NEVER"/>
+                <RowConstraints maxHeight="78.0" minHeight="50.0" prefHeight="78.0" valignment="CENTER" vgrow="NEVER"/>
+                <RowConstraints maxHeight="30.0" minHeight="50.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER"/>
+                <RowConstraints maxHeight="30.0" minHeight="50.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER"/>
+                <RowConstraints maxHeight="30.0" minHeight="50.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER"/>
+            </rowConstraints>
+            <children>
+                <Button fx:id="btn7" mnemonicParsing="false" onAction="#kalkuliere" text="7" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn8" mnemonicParsing="false" onAction="#kalkuliere" text="8" GridPane.columnIndex="1"
+                        GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn9" mnemonicParsing="false" onAction="#kalkuliere" text="9" GridPane.columnIndex="2"
+                        GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn4" mnemonicParsing="false" onAction="#kalkuliere" text="4" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn5" mnemonicParsing="false" onAction="#kalkuliere" text="5" GridPane.columnIndex="1"
+                        GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn6" mnemonicParsing="false" onAction="#kalkuliere" text="6" GridPane.columnIndex="2"
+                        GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn1" mnemonicParsing="false" onAction="#kalkuliere" text="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn2" mnemonicParsing="false" onAction="#kalkuliere" text="2" GridPane.columnIndex="1"
+                        GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn3" mnemonicParsing="false" onAction="#kalkuliere" text="3" GridPane.columnIndex="2"
+                        GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btn0" mnemonicParsing="false" onAction="#kalkuliere" text="0" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnClear" mnemonicParsing="false" onAction="#kalkuliere" text="C"
+                        GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="lbAnzeige" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0"
+                       style="-fx-background-color: #d6d6d6;" text="0" GridPane.columnSpan="3">
+                    <font>
+                        <Font name="Source Code Pro Bold" size="24.0"/>
+                    </font>
+                    <padding>
+                        <Insets right="20.0"/>
+                    </padding>
+                </Label>
+                <Separator prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="1"/>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+        </GridPane>
+    </children>
+</Pane>
